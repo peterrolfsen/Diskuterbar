@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="query.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+
+    <div class="banner" id="hjem">
+      <div class="header">
+        <a class="active" href="#hjem">Hjem</a>
+        <a href="#omoss">Om oss</a>
+        <a href="#Meny">Meny</a>
+        <a href="#tider">Åpningstider</a>
+        <a href = "mailto: diskuterbar@uib.no">Kontakt</a>
+
+
+    </div>
+      <img src="bilder/diskus2.jpg" alt="diskus"/>
+
+       <div id="bg">
+       </div>
+      <script type="text/javascript">
+        let bg = document.querySelector('#bg');
+        let banner = document.querySelector('.banner');
+        let header = document.querySelector('.header');
+        window.addEventListener('scroll', function(){
+          let value = window.scrollY;
+          bg.style.backgroundSize = 400 + value*2 +'px';
+          if(value > 700){
+            bg.style.opacity = 0;
+
+          } else if (value < 700){
+            bg.style.opacity = 1;
+
+
+          }
+        })
+      </script>
+
+    </div>
+    <div class="content-wrapper" id="omoss">
+      <div class="section">
+
+          <h1>Diskuterbar Studentbar</h1>
+          <p>Vi ønsker å tilby studentene ved Det samfunnsvitenskapelige fakultet et samflingssted, både av sosial og faglig art. Diskuterbars virke er ved det samfunnsvitenskapelige fakultet (SV) ved Universitetet i Bergen (UiB). Diskuterbar skal arbeide med å tilrettelegge for, og tilby lokaler til, all studentvirksomhet i regi av organisasjoner ved SV eller arrangement som kan være av interesse for studenter ved SV-fakultetet.</p>
+
+          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+          <div class="wrapper">
+            <ul>
+              <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+              <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+
+          </div>
+
+
+
+
+
+
+      </div>
+
+      <div class="section" id="Meny">
+        <div class="row" id="bildebook">
+
+        </div>
+        <div class="row" id="knapprow">
+          <div class="butcontainer">
+            <button onclick="window.open('disku2.jpg')" class="btn">Hent Meny</button>
+        </div>
+        </div>
+      </div>
+
+    <div class="section" id="tider">
+      <h2>Åpningstider</h2>
+        <table class="opening-hours table table-hover table-condensed borderless">
+	<thead>
+		<tr>
+
+
+		</tr>
+    <tr>
+      <th colspan="4" class="table-headline"><span style="font-size: 12px;">Bardrift fra 16:00</span></th>
+    </tr>
+    <tr>
+        <p id="p-table">Åpningstider kan variere på grunn av Covid-19 restriksjoner</p>
+    </tr>
+	</thead>
+	<!-- edit your hours here -->
+	<tbody>
+		<tr>
+			<th>Mandag</th>
+			<td>
+				13:00 - 20:30
+			</td>
+		</tr>
+		<tr>
+			<th>Tirsdag</th>
+			<td>
+				13:00 - 20:30
+			</td>
+		</tr>
+		<tr>
+			<th>Onsdag</th>
+			<td>
+				13:00 - 00:00
+			</td>
+		</tr>
+		<tr>
+			<th>Torsdag</th>
+			<td>
+				13:00 - 00:00
+			</td>
+		</tr>
+		<tr>
+			<th>Fredag</th>
+			<td>
+				13:00 - 00:00
+			</td>
+		</tr>
+		<tr>
+			<th>Lørdag</th>
+			<td>
+				Stengt
+			</td>
+		</tr>
+		<tr>
+			<th>Søndag</th>
+			<td>
+				Stengt
+			</td>
+		</tr>
+
+
+	</tbody>
+
+
+</table>
+
+
+      </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7885.755534851173!2d5.3234435!3d60.3884287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a780df5601c78ce!2sDiskuterbar!5e0!3m2!1sno!2sno!4v1601911825848!5m2!1sno!2sno" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+    </div>
+
+
+
+
+  </body>
+
+</html>

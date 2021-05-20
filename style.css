@@ -1,0 +1,332 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body{
+height: 2000px;
+overflow-x: hidden;
+}
+.container{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.banner{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.banner img{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.banner #bg {
+  transition-duration: 0.5s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background:
+#eff0ef url(bilder/logom.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px;
+  mix-blend-mode:screen;
+
+}
+
+.header{
+  z-index: 110;
+  position: fixed;
+  background-color: #eff0ef;
+  height: 90px;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+
+}
+.header a{
+  height: 100%;
+  color: black;
+  font-size: 2vh;
+  text-decoration: none;
+  padding: 30px;
+display: inline-block;
+}
+.header a:hover{
+  color: #ac3501;
+}
+
+.content-wrapper{
+  z-index: 9;
+  height: inherit;
+  width: 100%;
+  background-color: white;
+ position: relative;
+  top: 200vh;
+
+
+
+}
+.section{
+  text-align: center;
+  height: 25%;
+  width: 100%;
+  background:white;
+}
+.section p{
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+max-width: 600px;
+padding:40px;
+
+}
+.section h1{
+  color: #121215;
+  padding-top: 15vh;
+}
+h2{
+  padding-top: 2vh;
+}
+
+
+.butcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.butcontainer button {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color:#ac3501;
+  text-transform: uppercase;
+
+}
+
+.butcontainer .btn {
+  text-decoration: none;
+  border: 2px solid rgb(172, 53, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.butcontainer .btn:hover {
+  box-shadow: 1px 1px 25px 10px rgba(172, 53, 1, 0.4);
+}
+
+.butcontainer .btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(172, 53, 1, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.butcontainer .btn:hover:before {
+  left: 100%;
+}
+
+
+
+#Meny{
+  background-color: #edecec;
+}
+#bildebook{
+  background: url("bilder/diskus.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment:fixed;
+
+}
+
+#bestillknapp{
+  background-color: transparent;
+  height: 60px;
+  width: 200px;
+  color: black;
+  border: 3px solid #ac3501;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30%;
+}
+#bestillknapp:hover{
+  background-color: #ac3501;
+  color: white;
+}
+.row{
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+#maildisk{
+  text-decoration: none;
+  color: grey;
+  font-size: 2.5vh;
+}
+#maildisk:hover{
+  color: orange;
+}
+
+.stengt{
+  color: red;
+}
+.opening-hours {
+  width: 50vh;
+  height: 40vh;
+  max-width: 50vh;
+  margin: 25px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.opening-hours tr{
+  height: 30px;
+}
+#p-table{
+  margin-top:10px;
+  color: red;
+  font-size: 12px;
+}
+
+
+/* Let's style the wrapper in such away that,
+it should always be at the center of the browser */
+.wrapper {
+  position: inherit;
+  width: 100%;
+  display: inline-block;
+}
+
+
+/* Style the Un-order list by setting its list-style to none */
+.wrapper ul {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 200px;
+}
+
+/* Style the list items inside the UL list, by setting its width, height and line-height
+  and float them to left and set its border and border-radius.
+ */
+.wrapper ul li {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #ac3501;
+  transition: all 0.5s ease;
+  display: inline-block;
+
+}
+
+/* Style the icons by setting its color and margin-top value to 20px
+to align it properly */
+.wrapper ul li .fa {
+  color: #ac3501;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+  to icons for glowing effect and use transition property for smooth transition effect. */
+/*facebook*/
+.wrapper ul li:hover.facebook {
+  border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-facebook {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+
+/* instagram */
+.wrapper ul li:hover.instagram {
+  border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 640px){
+  .wrapper {
+      width: 350px;
+  }
+  .wrapper ul li{
+      margin-top: 10px;
+  }
+  .wrapper ul li.google{
+      margin-left: 60px;
+  }
+  .content-wrapper{
+    
+  }
+
+  .header a{
+    font-size: 2vh;
+    padding: 10px;
+  }
+
+  .section{
+    height: 30%;
+  }
+
+  .wrapper {
+    margin-top: 100px;
+  }
+  #Meny{
+    background: url("diskus.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment:scroll;
+  }
+  #bildebook{
+    display: none;
+  }
+  #knapprow{
+    width: 100%;
+  }
+}

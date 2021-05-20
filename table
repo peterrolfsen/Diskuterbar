@@ -1,0 +1,31 @@
+<table>
+  <tr>
+    <td>Mandag</td>
+    <td>13:00 - 20:30</td>
+  </tr>
+  <tr>
+    <td>Tirsdag</td>
+    <td>13:00 - 20:30</td>
+  </tr>
+  <tr>
+    <td>Onsdag</td>
+    <td>13:00 - 00:00</td>
+  </tr>
+  <tr>
+    <td>Torsdag</td>
+    <td>13:00 - 00:00</td>
+  </tr>
+  <tr>
+    <td>Fredag</td>
+    <td>13:00 - 20:00</td>
+  </tr>
+  <tr>
+    <td>Lørdag</td>
+    <td>Stengt</td>
+  </tr>
+  <tr>
+    <td>Søndag</td>
+    <td>Stengt</td>
+  </tr>
+
+</table>
